@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./glassmorph-card.css">
-    <meta property="og:url"           content="https://spike004.github.io/test-fb/index.html" />
+    <meta property="og:url"           content="https://developers.facebook.com/docs/plugins/" />
 <meta property="og:type"          content="website" />
-<meta property="og:title"         content="test share" />
-<meta property="og:description"   content="This is a description for this content" />
-<meta property="og:image"         content="https://spike004.github.io/test-fb/fb-test.png" />
+<meta property="og:title"         content="Your Website Title" />
+<meta property="og:description"   content="Your description" />
+<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
     <style>
         body{
             margin: 0;
@@ -43,7 +43,9 @@
             background: linear-gradient(rgb(12, 204, 99), rgb(196, 11, 233));
             clip-path: circle(30% at 90% 10%);
         }
-      
+       .fb-share-button{
+           position:absolute;
+       }
     </style>
 </head>
 <body>
@@ -52,7 +54,7 @@
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "https://spike004.github.io/test-fb/index.html";
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
@@ -62,7 +64,7 @@
               <div class="img-container">
                 <img src="./fb-test.png" />
             </div>
-            <div class="fb-share-button" data-href="https://spike004.github.io/test-fb/index.html" data-layout="button" data-size="large"><a target="_blank" href="https://spike004.github.io/test-fb/index.html" class="fb-xfbml-parse-ignore">Share</a></div>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
         <div class="glassmorph-card">
             <div class="content">
                 <h2>03</h2>

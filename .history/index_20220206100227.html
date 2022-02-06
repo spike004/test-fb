@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./glassmorph-card.css">
     <meta property="og:url"           content="https://spike004.github.io/test-fb/index.html" />
 <meta property="og:type"          content="website" />
-<meta property="og:title"         content="test share" />
-<meta property="og:description"   content="This is a description for this content" />
+<meta property="og:title"         content="Your Website Title" />
+<meta property="og:description"   content="Your description" />
 <meta property="og:image"         content="https://spike004.github.io/test-fb/fb-test.png" />
     <style>
         body{
@@ -43,7 +43,9 @@
             background: linear-gradient(rgb(12, 204, 99), rgb(196, 11, 233));
             clip-path: circle(30% at 90% 10%);
         }
-      
+       .fb-share-button{
+           position:absolute;
+       }
     </style>
 </head>
 <body>
@@ -52,7 +54,7 @@
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "https://spike004.github.io/test-fb/index.html";
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
