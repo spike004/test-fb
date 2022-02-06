@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test-fb</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./glassmorph-card.css">
     <meta property="og:url"           content="https://spike004.github.io/test-fb" />
 <meta property="og:type"          content="website" />
@@ -55,7 +55,10 @@
     js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-    </script>
+    FB.ui({
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/',
+}, function(response){});</script>
     
     <div class="container">
         <div class="glassmorph-card">
